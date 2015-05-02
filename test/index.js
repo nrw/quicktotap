@@ -85,3 +85,31 @@ test('full output fail', function (t) {
 
   filter.end(fs.readFileSync(__dirname + '/fail-in.txt', 'utf8'))
 })
+
+test('full output fail debug', function (t) {
+  filter = Filter({debug: true})
+
+  filter.pipe(concat(function (data) {
+    // console.log('\n\n\n\n')
+    // console.log(data.toString())
+    // console.log('\n\n\n\n')
+    t.equal(data.toString(), fs.readFileSync(__dirname + '/fail-debug-out.txt', 'utf8'))
+    t.end()
+  }))
+
+  filter.end(fs.readFileSync(__dirname + '/fail-in.txt', 'utf8'))
+})
+
+test('full output fail verbose', function (t) {
+  filter = Filter({verbose: true})
+
+  filter.pipe(concat(function (data) {
+    // console.log('\n\n\n\n')
+    // console.log(data.toString())
+    // console.log('\n\n\n\n')
+    t.equal(data.toString(), fs.readFileSync(__dirname + '/fail-verbose-out.txt', 'utf8'))
+    t.end()
+  }))
+
+  filter.end(fs.readFileSync(__dirname + '/fail-in.txt', 'utf8'))
+})

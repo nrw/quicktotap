@@ -6,6 +6,7 @@ module.exports = Filter
 
 function Filter (options) {
   options = options || {}
+  options.debug = options.debug || false
   options.verbose = options.verbose || false
 
   var total = 0
@@ -13,7 +14,7 @@ function Filter (options) {
   var first = true
 
   var err = /^(\/.*?) error:.*?\[.*? (.+)\].*?expected (.*?), got (.*?$)/
-
+  var isTest = /(^\s+Executed .*? seconds$|^Test)/
   var message, match
 
   return combine(split('\n'), through2(
@@ -43,8 +44,12 @@ function Filter (options) {
       } else if ((match = str.match(/^Test Case .*?\[.*? (.+)\]' passed/))) {
         total++
         this.push('ok ' + total + ' ' + match[1].replace(/_/g, ' ') + '\n')
-      } else if (options.verbose) {
-        this.push(str + '\n')
+      } else {
+        if (options.verbose) {
+          this.push(str + '\n')
+        } else if (options.debug && !isTest.test(str)) {
+          this.push(str + '\n')
+        }
       }
 
       cb()

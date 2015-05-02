@@ -4,6 +4,10 @@ var dashdash = require('dashdash')
 var Filter = require('..')
 
 var options = [{
+  names: ['debug', 'd'],
+  type: 'bool',
+  help: 'Print non-test messages to stdout'
+}, {
   names: ['verbose', 'v'],
   type: 'bool',
   help: 'Print uncaptured messages to stdout'
