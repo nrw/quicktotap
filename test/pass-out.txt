@@ -1,0 +1,18 @@
+TAP version 13
+# All tests
+# Quick.framework
+# MyAppTests.xctest
+# FaderTests
+ok 1 simple fade
+ok 2 end log fade
+ok 3 start log fade
+# SelectorTests
+ok 4 mocks query
+ok 5 selects first
+
+1..5
+# tests 5
+# pass  5
+
+# ok
+

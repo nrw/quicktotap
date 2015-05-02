@@ -1,0 +1,32 @@
+count matchers 1
+count matchers 1
+count matchers 1
+temp id 0xd000000000080002 <x-coredata://562C0ABF-5924-45D3-B90F-EED165EDF001/Template/p2>
+temp id 0xd0000000000c0002 <x-coredata://562C0ABF-5924-45D3-B90F-EED165EDF001/Template/p3>
+temp id 0xd000000000040002 <x-coredata://562C0ABF-5924-45D3-B90F-EED165EDF001/Template/p1>
+Test Suite 'All tests' started at 2015-05-01 23:22:41 +0000
+Test Suite 'Quick.framework' started at 2015-05-01 23:22:41 +0000
+Test Suite 'Quick.framework' passed at 2015-05-01 23:22:41 +0000.
+   Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'MyAppTests.xctest' started at 2015-05-01 23:22:41 +0000
+Test Suite 'FaderTests' started at 2015-05-01 23:22:41 +0000
+Test Case '-[MyAppTests.FaderTests simple_fade]' started.
+Test Case '-[MyAppTests.FaderTests simple_fade]' passed (0.002 seconds).
+Test Case '-[MyAppTests.FaderTests end_log_fade]' started.
+Test Case '-[MyAppTests.FaderTests end_log_fade]' passed (0.004 seconds).
+Test Case '-[MyAppTests.FaderTests start_log_fade]' started.
+Test Case '-[MyAppTests.FaderTests start_log_fade]' passed (0.004 seconds).
+Test Suite 'FaderTests' passed at 2015-05-01 23:22:41 +0000.
+   Executed 3 tests, with 0 failures (0 unexpected) in 0.010 (0.011) seconds
+Test Suite 'SelectorTests' started at 2015-05-01 23:22:41 +0000
+Test Case '-[MyAppTests.SelectorTests mocks_query]' started.
+Test Case '-[MyAppTests.SelectorTests mocks_query]' passed (0.003 seconds).
+Test Case '-[MyAppTests.SelectorTests selects_first]' started.
+Test Case '-[MyAppTests.SelectorTests selects_first]' passed (0.006 seconds).
+Test Suite 'SelectorTests' passed at 2015-05-01 23:22:41 +0000.
+   Executed 2 tests, with 0 failures (0 unexpected) in 0.009 (0.010) seconds
+Test Suite 'MyAppTests.xctest' passed at 2015-05-01 23:22:41 +0000.
+   Executed 5 tests, with 0 failures (0 unexpected) in 0.019 (0.022) seconds
+Test Suite 'All tests' passed at 2015-05-01 23:22:41 +0000.
+   Executed 5 tests, with 0 failures (0 unexpected) in 0.019 (0.024) seconds
+** TEST SUCCEEDED **

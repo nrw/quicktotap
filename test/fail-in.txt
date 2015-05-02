@@ -1,0 +1,88 @@
+PhoneSimulator.platform/Developer/Library/Frameworks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.3.sdk/Developer/Library/Frameworks"
+    export TEST_HOST=/Users/test/dev/MyApp/Build/Products/Debug-iphonesimulator/MyApp.app/MyApp
+    export TOOLCHAINS=com.apple.dt.toolchain.iOS8_3
+    export TREAT_MISSING_BASELINES_AS_TEST_FAILURES=NO
+    export UID=501
+    export UNLOCALIZED_RESOURCES_FOLDER_PATH=MyAppTests.xctest
+    export UNSTRIPPED_PRODUCT=NO
+    export USER=nic
+    export USER_APPS_DIR=/Users/test/Applications
+    export USER_LIBRARY_DIR=/Users/test/Library
+    export USE_DYNAMIC_NO_PIC=YES
+    export USE_HEADERMAP=YES
+    export USE_HEADER_SYMLINKS=NO
+    export VALIDATE_PRODUCT=NO
+    export VALID_ARCHS="i386 x86_64"
+    export VERBOSE_PBXCP=NO
+    export VERSIONPLIST_PATH=MyAppTests.xctest/version.plist
+    export VERSION_INFO_BUILDER=nic
+    export VERSION_INFO_FILE=MyAppTests_vers.c
+    export VERSION_INFO_STRING="\"@(#)PROGRAM:MyAppTests  PROJECT:MyApp-\""
+    export WRAPPER_EXTENSION=xctest
+    export WRAPPER_NAME=MyAppTests.xctest
+    export WRAPPER_SUFFIX=.xctest
+    export XCODE_APP_SUPPORT_DIR=/Applications/Xcode.app/Contents/Developer/Library/Xcode
+    export XCODE_PRODUCT_BUILD_VERSION=6D1002
+    export XCODE_VERSION_ACTUAL=0631
+    export XCODE_VERSION_MAJOR=0600
+    export XCODE_VERSION_MINOR=0630
+    export XPCSERVICES_FOLDER_PATH=MyAppTests.xctest/XPCServices
+    export YACC=yacc
+    export arch=x86_64
+    export diagnostic_message_length=95
+    export variant=normal
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-stdlib-tool --verbose --copy
+libswiftCore.dylib is up to date at /Users/test/dev/MyApp/Build/Products/Debug-iphonesimulator/MyAppTests.xctest/Frameworks/libswiftCore.dylib
+libswiftCoreGraphics.dylib is up to date at /Users/test/dev/MyApp/Build/Products/Debug-iphonesimulator/MyAppTests.xctest/Frameworks/libswiftCoreGraphics.dylib
+libswiftObjectiveC.dylib is up to date at /Users/test/dev/MyApp/Build/Products/Debug-iphonesimulator/MyAppTests.xctest/Frameworks/libswiftObjectiveC.dylib
+libswiftFoundation.dylib is up to date at /Users/test/dev/MyApp/Build/Products/Debug-iphonesimulator/MyAppTests.xctest/Frameworks/libswiftFoundation.dylib
+libswiftSecurity.dylib is up to date at /Users/test/dev/MyApp/Build/Products/Debug-iphonesimulator/MyAppTests.xctest/Frameworks/libswiftSecurity.dylib
+libswiftUIKit.dylib is up to date at /Users/test/dev/MyApp/Build/Products/Debug-iphonesimulator/MyAppTests.xctest/Frameworks/libswiftUIKit.dylib
+libswiftXCTest.dylib is up to date at /Users/test/dev/MyApp/Build/Products/Debug-iphonesimulator/MyAppTests.xctest/Frameworks/libswiftXCTest.dylib
+libswiftCoreImage.dylib is up to date at /Users/test/dev/MyApp/Build/Products/Debug-iphonesimulator/MyAppTests.xctest/Frameworks/libswiftCoreImage.dylib
+libswiftDispatch.dylib is up to date at /Users/test/dev/MyApp/Build/Products/Debug-iphonesimulator/MyAppTests.xctest/Frameworks/libswiftDispatch.dylib
+libswiftCoreAudio.dylib is up to date at /Users/test/dev/MyApp/Build/Products/Debug-iphonesimulator/MyAppTests.xctest/Frameworks/libswiftCoreAudio.dylib
+libswiftDarwin.dylib is up to date at /Users/test/dev/MyApp/Build/Products/Debug-iphonesimulator/MyAppTests.xctest/Frameworks/libswiftDarwin.dylib
+
+Touch Build/Products/Debug-iphonesimulator/MyAppTests.xctest
+    cd /Users/test/dev/MyApp
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+    /usr/bin/touch -c /Users/test/dev/MyApp/Build/Products/Debug-iphonesimulator/MyAppTests.xctest
+
+count matchers 1
+count matchers 1
+count matchers 1
+temp id 0xd000000000080002 <x-coredata://562C0ABF-5924-45D3-B90F-EED165EDF001/Template/p2>
+temp id 0xd0000000000c0002 <x-coredata://562C0ABF-5924-45D3-B90F-EED165EDF001/Template/p3>
+temp id 0xd000000000040002 <x-coredata://562C0ABF-5924-45D3-B90F-EED165EDF001/Template/p1>
+Test Suite 'All tests' started at 2015-05-02 03:58:33 +0000
+Test Suite 'Quick.framework' started at 2015-05-02 03:58:33 +0000
+Test Suite 'Quick.framework' passed at 2015-05-02 03:58:33 +0000.
+   Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'MyAppTests.xctest' started at 2015-05-02 03:58:33 +0000
+Test Suite 'FaderTests' started at 2015-05-02 03:58:33 +0000
+Test Case '-[MyAppTests.FaderTests simple_fade]' started.
+Test Case '-[MyAppTests.FaderTests simple_fade]' passed (0.023 seconds).
+Test Case '-[MyAppTests.FaderTests end_log_fade]' started.
+/Users/test/dev/MyApp/MyAppTests/MyAppTests.swift:19: error: -[MyAppTests.FaderTests end_log_fade] : failed - expected to be close to <0.0000> (within 0.0000), got <1.0000>
+/Users/test/dev/MyApp/MyAppTests/MyAppTests.swift:24: error: -[MyAppTests.FaderTests end_log_fade] : failed - expected to be close to <3.0000> (within 0.0000), got <1.0000>
+Test Case '-[MyAppTests.FaderTests end_log_fade]' failed (0.017 seconds).
+Test Case '-[MyAppTests.FaderTests start_log_fade]' started.
+Test Case '-[MyAppTests.FaderTests start_log_fade]' passed (0.004 seconds).
+Test Suite 'FaderTests' failed at 2015-05-02 03:58:33 +0000.
+   Executed 3 tests, with 2 failures (0 unexpected) in 0.044 (0.045) seconds
+Test Suite 'SelectorTests' started at 2015-05-02 03:58:33 +0000
+Test Case '-[MyAppTests.SelectorTests mocks_query]' started.
+Test Case '-[MyAppTests.SelectorTests mocks_query]' passed (0.004 seconds).
+Test Case '-[MyAppTests.SelectorTests selects_first]' started.
+Test Case '-[MyAppTests.SelectorTests selects_first]' passed (0.006 seconds).
+Test Suite 'SelectorTests' passed at 2015-05-02 03:58:33 +0000.
+   Executed 2 tests, with 0 failures (0 unexpected) in 0.010 (0.010) seconds
+Test Suite 'MyAppTests.xctest' failed at 2015-05-02 03:58:33 +0000.
+   Executed 5 tests, with 2 failures (0 unexpected) in 0.053 (0.056) seconds
+Test Suite 'All tests' failed at 2015-05-02 03:58:33 +0000.
+   Executed 5 tests, with 2 failures (0 unexpected) in 0.053 (0.058) seconds
+Failing tests:
+  -[FaderTests end_log_fade()]
+  -[FaderTests end_log_fade()]
+** TEST FAILED **

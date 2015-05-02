@@ -1,0 +1,36 @@
+{
+  "name": "quicktotap",
+  "description": "A filter that turns Quick output into TAP output",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nrw/quicktotap.git"
+  },
+  "bin": "./bin/quicktotap",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test/index.js"
+  },
+  "dependencies": {
+    "dashdash": "^1.10.0",
+    "split": "^0.3.3",
+    "stream-combiner": "^0.2.1",
+    "through2": "^0.6.5"
+  },
+  "devDependencies": {
+    "concat-stream": "^1.4.8",
+    "tape": "^4.0.0"
+  },
+  "author": {
+    "name": "Nicholas Westlake"
+  },
+  "keywords": [
+    "tap",
+    "output",
+    "uiautomation",
+    "ui",
+    "automation",
+    "test"
+  ]
+}

@@ -1,0 +1,40 @@
+#!/usr/bin/env node
+
+var dashdash = require('dashdash')
+var Filter = require('..')
+
+var options = [{
+  names: ['verbose', 'v'],
+  type: 'bool',
+  help: 'Print uncaptured messages to stdout'
+}, {
+  names: ['version'],
+  type: 'bool',
+  help: 'Print version and exit.'
+}, {
+  names: ['help'],
+  type: 'bool',
+  help: 'Print this help and exit.'
+}]
+
+var parser = dashdash.createParser({options: options})
+
+try {
+  var opts = parser.parse(process.argv)
+} catch (e) {
+  console.error('quicktotap error: %s', e.message);
+  process.exit(1)
+}
+
+if (opts.help) {
+  var help = parser.help({includeEnv: true}).trimRight()
+  console.log('usage: <Quick Tests> | quicktotap [OPTIONS]\noptions:\n' + help)
+  process.exit(0)
+}
+
+if (opts.version) {
+  console.log('v'+require('../package.json').version)
+  process.exit(0)
+}
+
+process.stdin.pipe(Filter(opts)).pipe(process.stdout)
